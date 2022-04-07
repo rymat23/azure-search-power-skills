@@ -22,11 +22,11 @@ namespace AzureCognitiveSearch.PowerSkills.Vision.AnalyzeForm
 {
     public static class AnalyzeForm
     {
-        private static readonly string formsRecognizerApiEndpointSetting = "FORMS_RECOGNIZER_ENDPOINT_URL";
-        private static readonly string formsRecognizerApiKeySetting = "FORMS_RECOGNIZER_API_KEY";
-        private static readonly string modelIdSetting = "FORMS_RECOGNIZER_MODEL_ID";
-        private static readonly string retryDelaySetting = "FORMS_RECOGNIZER_RETRY_DELAY";
-        private static readonly string maxAttemptsSetting = "FORMS_RECOGNIZER_MAX_ATTEMPTS";
+        private static readonly string formsRecognizerApiEndpointSetting = "https://team6-insurance-form.cognitiveservices.azure.com/";
+        private static readonly string formsRecognizerApiKeySetting = "bede1b2e245e4298a5484a6b43cebfd5";
+        private static readonly string modelIdSetting = "insurance-form-model";
+        private static readonly string retryDelaySetting = "1";
+        private static readonly string maxAttemptsSetting = "10";
 
         [FunctionName("analyze-form")]
         public static async Task<IActionResult> RunAnalyzeForm(
